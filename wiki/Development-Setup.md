@@ -12,8 +12,8 @@
 
 1. **Clone Repository**
    ```bash
-   git clone https://github.com/Souvik-Ghost/ai_assistant.git
-   cd ai_assistant
+   git clone https://github.com/Souvik-Ghost/ghost-smart-assistant.git
+   cd ghost-smart-assistant
    ```
 
 2. **Create Virtual Environment**
@@ -55,7 +55,7 @@ git checkout -b feature/your-feature-name
 ### 2. Running Tests
 ```bash
 pytest tests/
-pytest tests/ --cov=ai_assistant  # With coverage
+pytest tests/ --cov=ghost_smart_assistant  # With coverage
 ```
 
 ### 3. Code Style
@@ -63,8 +63,8 @@ pytest tests/ --cov=ai_assistant  # With coverage
 - Follow PEP 8
 - Run linters:
   ```bash
-  flake8 ai_assistant
-  black ai_assistant
+  flake8 ghost_smart_assistant
+  black ghost_smart_assistant
   ```
 
 ### 4. Documentation
@@ -80,7 +80,7 @@ pytest tests/ --cov=ai_assistant  # With coverage
 
 ## Module Structure
 ```
-ai_assistant/
+ghost_smart_assistant/
 ├── modules/
 │   ├── visual_detection/
 │   ├── audio_detection/
@@ -121,6 +121,6 @@ ai_assistant/
 - Logs stored in `logs/`
 
 ## Need Help?
-- Check [Issues](https://github.com/Souvik-Ghost/ai_assistant/issues)
-- Join [Discussions](https://github.com/Souvik-Ghost/ai_assistant/discussions)
-- Review [Wiki](https://github.com/Souvik-Ghost/ai_assistant/wiki)
+- Check [Issues](https://github.com/Souvik-Ghost/ghost-smart-assistant/issues)
+- Join [Discussions](https://github.com/Souvik-Ghost/ghost-smart-assistant/discussions)
+- Review [Wiki](https://github.com/Souvik-Ghost/ghost-smart-assistant/wiki)

@@ -10,8 +10,8 @@
 ### Steps
 1. **Download the Project**
    ```bash
-   git clone https://github.com/Souvik-Ghost/ai_assistant.git
-   cd ai_assistant
+   git clone https://github.com/Souvik-Ghost/ghost-smart-assistant.git
+   cd ghost-smart-assistant
    ```
 
 2. **Create Virtual Environment**
@@ -27,11 +27,11 @@
 
 4. **Run the Application**
    ```bash
-   python -m ai_assistant
+   python -m ghost_smart_assistant
    ```
 
 ### Using the Windows Installer
-1. Download the latest release from [Releases](https://github.com/Souvik-Ghost/ai_assistant/releases)
+1. Download the latest release from [Releases](https://github.com/Souvik-Ghost/ghost-smart-assistant/releases)
 2. Run the installer
 3. Follow the installation wizard
 
@@ -53,8 +53,8 @@
 2. **Clone and Setup**
    ```bash
    cd storage/shared
-   git clone https://github.com/Souvik-Ghost/ai_assistant.git
-   cd ai_assistant
+   git clone https://github.com/Souvik-Ghost/ghost-smart-assistant.git
+   cd ghost-smart-assistant
    ```
 
 3. **Create Virtual Environment**
@@ -75,7 +75,7 @@
 
 6. **Run the Application**
    ```bash
-   python -m ai_assistant
+   python -m ghost_smart_assistant
    ```
 
 ## Troubleshooting
@@ -97,6 +97,6 @@
    - Check VNC configuration
 
 ### Getting Help
-- Open an [issue](https://github.com/Souvik-Ghost/ai_assistant/issues)
-- Check [Discussions](https://github.com/Souvik-Ghost/ai_assistant/discussions)
+- Open an [issue](https://github.com/Souvik-Ghost/ghost-smart-assistant/issues)
+- Check [Discussions](https://github.com/Souvik-Ghost/ghost-smart-assistant/discussions)
 - Review error logs in `logs/` directory

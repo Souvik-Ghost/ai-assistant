@@ -1,9 +1,9 @@
-# AI Assistant
+# Ghost Smart Assistant
 
-[![CI/CD](https://github.com/Souvik-Ghost/ai_assistant/actions/workflows/ci.yml/badge.svg)](https://github.com/Souvik-Ghost/ai_assistant/actions/workflows/ci.yml)
+[![CI/CD](https://github.com/Souvik-Ghost/ghost-smart-assistant/actions/workflows/ci.yml/badge.svg)](https://github.com/Souvik-Ghost/ghost-smart-assistant/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Android-lightgrey.svg)](https://github.com/Souvik-Ghost/ai_assistant)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Android-lightgrey.svg)](https://github.com/Souvik-Ghost/ghost-smart-assistant)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 A comprehensive multi-functional AI assistant with advanced capabilities for visual detection, audio processing, system monitoring, internet search, and OSINT tools.
@@ -28,13 +28,13 @@ A comprehensive multi-functional AI assistant with advanced capabilities for vis
 
 2. **Download the Project**:
    ```bash
-   git clone https://github.com/Souvik-Ghost/ai_assistant.git
+   git clone https://github.com/Souvik-Ghost/ghost-smart-assistant.git
    # or download and extract the ZIP file
    ```
 
 3. **Set Up Virtual Environment**:
    ```bash
-   cd ai_assistant
+   cd ghost-smart-assistant
    python -m venv venv
    .\venv\Scripts\activate
    ```
@@ -46,7 +46,7 @@ A comprehensive multi-functional AI assistant with advanced capabilities for vis
 
 5. **Run the Application**:
    ```bash
-   python -m ai_assistant.main
+   python -m ghost_smart_assistant.main
    ```
 
 ### Android Installation
@@ -67,8 +67,8 @@ A comprehensive multi-functional AI assistant with advanced capabilities for vis
 3. **Set Up Project**:
    ```bash
    cd storage/shared
-   git clone https://github.com/Souvik-Ghost/ai_assistant.git
-   cd ai_assistant
+   git clone https://github.com/Souvik-Ghost/ghost-smart-assistant.git
+   cd ghost-smart-assistant
    ```
 
 4. **Create Virtual Environment**:
@@ -84,7 +84,7 @@ A comprehensive multi-functional AI assistant with advanced capabilities for vis
 
 6. **Run the Application**:
    ```bash
-   python -m ai_assistant.main
+   python -m ghost_smart_assistant.main
    ```
 
 ## Usage Guide
