@@ -1,0 +1,27 @@
+[
+  {
+    "title": "v1.0.0 - Initial Release",
+    "description": "First stable release with core features",
+    "state": "open"
+  },
+  {
+    "title": "v1.1.0 - Enhanced Visual Detection",
+    "description": "Improved visual detection capabilities and performance",
+    "state": "open"
+  },
+  {
+    "title": "v1.2.0 - Audio Enhancement",
+    "description": "Advanced audio processing features",
+    "state": "open"
+  },
+  {
+    "title": "v1.3.0 - System Integration",
+    "description": "Better system integration and monitoring",
+    "state": "open"
+  },
+  {
+    "title": "v2.0.0 - Major Update",
+    "description": "Complete overhaul with new features and improvements",
+    "state": "open"
+  }
+]
