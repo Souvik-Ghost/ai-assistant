@@ -1,0 +1,18 @@
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# they will be requested for review when someone opens a pull request.
+*       @Souvik-Ghost
+
+# Module owners
+/ai_assistant/modules/visual_detection.py    @Souvik-Ghost
+/ai_assistant/modules/audio_detection.py     @Souvik-Ghost
+/ai_assistant/modules/device_monitoring.py   @Souvik-Ghost
+/ai_assistant/modules/internet_search.py     @Souvik-Ghost
+/ai_assistant/modules/osint_tools.py         @Souvik-Ghost
+
+# Build scripts
+*.bat    @Souvik-Ghost
+*.sh     @Souvik-Ghost
+
+# Documentation
+/docs/   @Souvik-Ghost
