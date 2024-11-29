@@ -1,177 +1,99 @@
-# Ghost Smart Assistant
+pip install -r requirements.txt
+pip install -r requirements.txt
+pip install -r requirements.txt
 
-[![CI/CD](https://github.com/Souvik-Ghost/ghost-smart-assistant/actions/workflows/ci.yml/badge.svg)](https://github.com/Souvik-Ghost/ghost-smart-assistant/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Android-lightgrey.svg)](https://github.com/Souvik-Ghost/ghost-smart-assistant)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+# AI Assistant Web Application
 
-A comprehensive multi-functional AI assistant with advanced capabilities for visual detection, audio processing, system monitoring, internet search, and OSINT tools.
+A comprehensive web-based AI assistant with multiple intelligent modules for visual detection, system monitoring, and OSINT analysis.
 
 ## Features
 
-- **Visual Detection**: Face detection, motion tracking, and object detection using OpenCV
-- **Audio Detection**: Real-time audio monitoring and visualization
-- **Device Monitoring**: System information and resource usage tracking
-- **Internet Search**: Multi-engine web search with history
-- **OSINT Tools**: Network analysis and domain information gathering
+1. **Visual Detection**
+   - Face detection using MediaPipe
+   - Real-time image processing
+   - Visual feedback with detected faces
 
-## Installation Guide
+2. **Device Monitoring**
+   - System information
+   - CPU usage and details
+   - Memory statistics
+   - Disk space analysis
+   - Battery information (if available)
 
-### Windows Installation
+3. **OSINT Tools**
+   - Domain information lookup
+   - WHOIS data retrieval
+   - DNS record analysis
+   - IP geolocation
+   - HTTP header inspection
 
-1. **Prerequisites**:
-   - Python 3.8 or higher
-   - Git (optional)
-   - Webcam (for visual detection)
-   - Microphone (for audio detection)
+## Installation
 
-2. **Download the Project**:
-   ```bash
-   git clone https://github.com/Souvik-Ghost/ghost-smart-assistant.git
-   # or download and extract the ZIP file
-   ```
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/ai-assistant.git
+cd ai-assistant
+```
 
-3. **Set Up Virtual Environment**:
-   ```bash
-   cd ghost-smart-assistant
-   python -m venv venv
-   .\venv\Scripts\activate
-   ```
+2. Install required packages:
+```bash
+pip install -r requirements.txt
+```
 
-4. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Usage
 
-5. **Run the Application**:
-   ```bash
-   python -m ghost_smart_assistant.main
-   ```
+1. Start the application:
+```bash
+python -m ai_assistant.main
+```
 
-### Android Installation
+2. Open your web browser and navigate to:
+```
+http://localhost:5000
+```
 
-1. **Prerequisites**:
-   - Termux app from F-Droid
-   - Storage permission for Termux
-   - Python package in Termux
+## Requirements
 
-2. **Install Required Packages in Termux**:
-   ```bash
-   pkg update && pkg upgrade
-   pkg install python opencv-python numpy
-   pkg install x11-repo
-   pkg install qt5-python
-   ```
+- Python 3.8+
+- Flask
+- OpenCV
+- MediaPipe
+- psutil
+- python-whois
+- dnspython
+- requests
 
-3. **Set Up Project**:
-   ```bash
-   cd storage/shared
-   git clone https://github.com/Souvik-Ghost/ghost-smart-assistant.git
-   cd ghost-smart-assistant
-   ```
+## Project Structure
 
-4. **Create Virtual Environment**:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate
-   ```
+```
+ai_assistant/
+├── main.py           # Flask application entry point
+├── templates/
+│   └── index.html    # Main web interface
+├── static/
+│   ├── css/
+│   │   └── style.css # Styling
+│   └── js/
+│       └── main.js   # Client-side interactions
+└── modules/          # Future module expansion
+```
 
-5. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Development
 
-6. **Run the Application**:
-   ```bash
-   python -m ghost_smart_assistant.main
-   ```
+This project is in active development. Future improvements include:
+- User authentication
+- Additional AI modules
+- Enhanced security features
+- Production deployment optimizations
 
-## Usage Guide
+## License
 
-1. **Starting the Application**:
-   - Launch the application using the command above
-   - A floating window will appear with the AI Assistant interface
-
-2. **Feature Navigation**:
-   - Use the buttons at the top to switch between features
-   - Each feature has its own set of controls and options
-
-3. **Visual Detection**:
-   - Select detection mode (Face/Motion/Object)
-   - Click "Start Camera" to begin detection
-   - Adjust settings as needed
-
-4. **Audio Detection**:
-   - Select input device from dropdown
-   - Start audio monitoring
-   - View real-time audio levels
-
-5. **Device Monitoring**:
-   - View system information
-   - Monitor CPU, Memory, and Disk usage
-   - Track running processes
-
-6. **Internet Search**:
-   - Enter search query
-   - Select search engine
-   - View and manage search history
-
-7. **OSINT Tools**:
-   - Enter domain/IP for analysis
-   - Select scanning options
-   - View detailed results
-
-## Troubleshooting
-
-### Common Issues on Windows:
-
-1. **Camera Access Error**:
-   - Ensure webcam is connected
-   - Grant camera permissions
-   - Check if other applications are using the camera
-
-2. **Audio Device Error**:
-   - Verify microphone is connected
-   - Check Windows sound settings
-   - Update audio drivers if needed
-
-3. **PyQt5 Installation Error**:
-   - Try installing wheel file manually
-   - Update pip: `python -m pip install --upgrade pip`
-   - Install Visual C++ Redistributable if needed
-
-### Common Issues on Android:
-
-1. **Display Error**:
-   - Install VNC server: `pkg install tigervnc`
-   - Start VNC server: `vncserver`
-   - Install VNC viewer app
-
-2. **Permission Error**:
-   - Grant Termux storage permission
-   - Run: `termux-setup-storage`
-
-3. **Package Installation Error**:
-   - Update package lists
-   - Install python-dev package
-   - Use pip with `--no-cache-dir` flag
-
-## Security Considerations
-
-- Grant camera and microphone access only when needed
-- Review OSINT tool permissions before scanning
-- Keep dependencies updated for security patches
-- Don't store sensitive information in search history
+MIT License
 
 ## Contributing
 
 1. Fork the repository
-2. Create a feature branch
+2. Create your feature branch
 3. Commit your changes
 4. Push to the branch
-5. Create a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+5. Create a new Pull Request

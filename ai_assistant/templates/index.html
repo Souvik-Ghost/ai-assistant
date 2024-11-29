@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Assistant</h1>
+        </header>
+        <main>
+            <div class="test-section">
+                <button onclick="testAPI()">Test Connection</button>
+                <div id="result"></div>
+            </div>
+
+            <div class="visual-detection">
+                <h2>Visual Detection</h2>
+                <input type="file" id="visual-input" accept="image/*">
+                <button onclick="handleVisualDetection()">Analyze Image</button>
+                <div class="result">
+                    <img id="visual-result" style="display: none;">
+                    <pre id="visual-data"></pre>
+                </div>
+            </div>
+
+            <div class="device-monitoring">
+                <h2>Device Monitoring</h2>
+                <button onclick="checkDeviceStatus()">Check Status</button>
+                <div class="result">
+                    <pre id="device-status"></pre>
+                </div>
+            </div>
+
+            <div class="osint-tools">
+                <h2>OSINT Tools</h2>
+                <div class="input-group">
+                    <input type="text" id="osint-input" placeholder="Enter domain (e.g., example.com)">
+                    <button onclick="handleOSINT()">Analyze</button>
+                </div>
+                <div class="result">
+                    <pre id="osint-data"></pre>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
