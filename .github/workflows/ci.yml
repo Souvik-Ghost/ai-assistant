@@ -71,7 +71,7 @@ jobs:
         pyinstaller --clean --name=ai_assistant --onefile --windowed --add-data "ai_assistant/modules;ai_assistant/modules" ai_assistant/main.py
         
     - name: Upload Windows Build
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: windows-build
         path: dist/ai_assistant.exe
